@@ -18,5 +18,6 @@ client = TestClient(app)
 ])
 def test_check_prime(number, expected):
     response = client.get(f"/check_prime/{number}")
+    print(response)
     assert response.status_code == 200
     assert response.json() == expected
