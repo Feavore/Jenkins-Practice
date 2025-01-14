@@ -28,7 +28,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git branch: "master", url: 'https://github.com/Feavore/Jenkins-Final.git'
+                git branch: "master", url: 'https://github.com/Feavore/Jenkins-Practice.git'
             }
         }
 
